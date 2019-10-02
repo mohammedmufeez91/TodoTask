@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mufeez.taskzero.activity.main.MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/no_tasks_tv"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:padding="20dp"
+        android:text="No tasks available!!..please Click (+) at bottom to add tasks"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/plus_ic"
+        android:id="@+id/add_task_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+</FrameLayout>

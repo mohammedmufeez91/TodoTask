@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "529110300596",
+    "firebase_url": "https://task-todo-45003.firebaseio.com",
+    "project_id": "task-todo-45003",
+    "storage_bucket": "task-todo-45003.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529110300596:android:9dae8a0700ac298f1064e1",
+        "android_client_info": {
+          "package_name": "com.mufeez.taskzero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529110300596-i5t2752upngdqvrq9ib6626hkki744ka.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mufeez.taskzero",
+            "certificate_hash": "7dd8f6d89f9768aa7a175f2aa2a09bff1fbb2ea0"
+          }
+        },
+        {
+          "client_id": "529110300596-fppvurrm30odu9ujkr0uq79thdu34qjq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-y-AdNt44DDSB1b4WDeTEjghejEBCbn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529110300596-fppvurrm30odu9ujkr0uq79thdu34qjq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

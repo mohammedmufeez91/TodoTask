@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Todo-Zero</string>
+    <string name="title_hint">Add title for task...</string>
+    <string name="body_hint">add task describtion...</string>
+    <string name="priority_title">choose level of Priority(optional)</string>
+    <string name="task_added">Task saved successfully</string>
+    <string name="empty_title_message">Please add Title and retry again</string>
+</resources>

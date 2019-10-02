@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:civ="http://schemas.android.com/tools">
+
+    <EditText
+        android:id="@+id/title_input"
+        android:maxLines="2"
+        android:lines="2"
+        android:background="@android:color/transparent"
+        android:layout_toLeftOf="@+id/save_iv"
+        android:layout_marginRight="5dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/title_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/save_iv"
+        android:src="@drawable/save_ic"
+        android:layout_alignParentBottom="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <EditText
+        android:gravity="top"
+        android:id="@+id/body_input"
+        android:layout_below="@+id/title_input"
+        android:background="@android:color/transparent"
+        android:textSize="18sp"
+        android:hint="@string/body_hint"
+        android:layout_above="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- footer -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/footer_title"
+            android:text="@string/priority_title"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.mufeez.taskzero.widgets.CircleImageView
+            app:civ_border_width="3dp"
+            app:civ_border_color="@android:color/transparent"
+            android:layout_toLeftOf="@+id/normal_priority_iv"
+            android:layout_below="@+id/footer_title"
+            android:layout_marginRight="20dp"
+            android:id="@+id/low_priority_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/low_priority_shape" />
+
+        <com.mufeez.taskzero.widgets.CircleImageView
+            android:layout_below="@+id/footer_title"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@android:color/transparent"
+            android:layout_centerInParent="true"
+            android:id="@+id/normal_priority_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/normal_priority_shape" />
+
+        <com.mufeez.taskzero.widgets.CircleImageView
+            android:layout_below="@+id/footer_title"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@android:color/transparent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/normal_priority_iv"
+            android:id="@+id/high_priority_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/high_priority_shape" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
